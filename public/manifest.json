@@ -1,6 +1,6 @@
 {
-  "name": "resume",
-  "short_name": "resume",
+  "name": "刘志达的简历",
+  "short_name": "简历",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",
