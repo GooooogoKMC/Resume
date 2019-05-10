@@ -52,7 +52,6 @@ export default {
       const d = document;
       const p = Number(((d.body && d.body.clientWidth) || this.Html.offsetWidth) / this.baseCompute)
         .toFixed(3);
-      console.log(p);
       if (p < 1.067) {
         if (p > 0.5) {
           return p;
