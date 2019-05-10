@@ -1,23 +1,21 @@
 <template>
   <div class="home">
-    <div class="resume-home">
-      <p class="title animated">RESUME</p>
-      <div class="self">
-        <div class="autodyne">
-          <img src="../../public/img/head.png" alt="">
-        </div>
-        <div class="info">
-          <p class="name">刘志达</p>
-          <p class="sub-name">GoogoKMChi</p>
-          <p class="intention">求职意向：Web前端开发</p>
-        </div>
-        <router-link tag="div" :to="{name:'about'}" class="next-page"/>
+    <p class="title animated">RESUME</p>
+    <div class="self">
+      <div class="autodyne">
+        <img src="../../public/img/head.png" alt="">
       </div>
-      <div class="contact">
-        <div class="iconfont" title="13702003650">&#xe848;13702003650</div>
-        <div class="iconfont" title="GoogoKMChi@gmail.com">&#xe832;GoogoKMChi@gmail.com</div>
-        <div class="iconfont" title="成都市温江区">&#xe7a5;成都市温江区</div>
+      <div class="info">
+        <p class="name">刘志达</p>
+        <p class="sub-name">GoogoKMChi</p>
+        <p class="intention">求职意向：Web前端开发</p>
       </div>
+      <router-link tag="div" :to="{name:'about'}" class="next-page"/>
+    </div>
+    <div class="contact">
+      <div class="iconfont" title="13702003650">&#xe848;13702003650</div>
+      <div class="iconfont" title="GoogoKMChi@gmail.com">&#xe832;GoogoKMChi@gmail.com</div>
+      <div class="iconfont" title="成都市温江区">&#xe7a5;成都市温江区</div>
     </div>
   </div>
 </template>
@@ -32,16 +30,10 @@ export default {
 };
 </script>
 
-
-
-
-
-
-
 <style lang="scss" scoped>
   $pageThemeColor: #567180;
   $autodyneSize: 3;
-  .resume-home {
+  .home {
     width: 7.94rem;
     height: 11.23rem;
     background: #fff;
