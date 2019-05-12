@@ -5,12 +5,19 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-
+    baseInfo: {
+      name: '刘志达',
+      nameEn: 'GoogoKMChi',
+      intention: 'Web前端开发',
+      phone: '13702003650',
+      mail: 'GoogoKMChi@gmail.com',
+      location: '成都市温江区',
+      birth: '1993.05.20',
+    },
   },
-  mutations: {
-
+  getters: {
+    getBaseInfo: state => state.baseInfo,
   },
-  actions: {
-
-  },
+  mutations: {},
+  modules: {},
 });
