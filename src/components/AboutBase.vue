@@ -8,33 +8,35 @@
     </div>
     <div class="lead">
       <div class="triangle"/>
-      <div class="bloc">
-        <div class="title theme-select">专业技能</div>
-        <div class="content professional-skill">
-          <div v-for="item in professionalSkill" :key="item.code">
-            <div class="skill-icon iconfont-code" v-html="item.code"></div>
-            <div class="skill-name theme-select">{{item.name}}</div>
+      <div class="shadow-container">
+        <div class="bloc">
+          <div class="title theme-select">专业技能</div>
+          <div class="content professional-skill">
+            <div v-for="item in professionalSkill" :key="item.code">
+              <div class="skill-icon iconfont-code" v-html="item.code"></div>
+              <div class="skill-name theme-select">{{item.name}}</div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="bloc">
-        <div class="title theme-select">基本信息</div>
-        <div class="content">
-          <div class="line">
-            <div class="iconfont-code icon theme-select">&#xe668;</div>
-            <div class="tale theme-select">{{baseInfo.birth}}</div>
-          </div>
-          <div class="line">
-            <div class="iconfont icon theme-select">&#xe848;</div>
-            <div class="tale theme-select">{{baseInfo.phone}}</div>
-          </div>
-          <div class="line">
-            <div class="iconfont icon theme-select">&#xe832;</div>
-            <div class="tale theme-select">{{baseInfo.mail}}</div>
-          </div>
-          <div class="line">
-            <div class="iconfont icon theme-select">&#xe7a5;</div>
-            <div class="tale theme-select">{{baseInfo.location}}</div>
+        <div class="bloc">
+          <div class="title theme-select">基本信息</div>
+          <div class="content">
+            <div class="line">
+              <div class="iconfont-code icon theme-select">&#xe668;</div>
+              <div class="tale theme-select">{{baseInfo.birth}}</div>
+            </div>
+            <div class="line">
+              <div class="iconfont icon theme-select">&#xe848;</div>
+              <div class="tale theme-select">{{baseInfo.phone}}</div>
+            </div>
+            <div class="line">
+              <div class="iconfont icon theme-select">&#xe832;</div>
+              <div class="tale theme-select">{{baseInfo.mail}}</div>
+            </div>
+            <div class="line">
+              <div class="iconfont icon theme-select">&#xe7a5;</div>
+              <div class="tale theme-select">{{baseInfo.location}}</div>
+            </div>
           </div>
         </div>
       </div>
@@ -184,6 +186,16 @@ export default {
       left: $baseLeadLeft + rem;
       padding-top: $baseLeadBeforeHeight * 2 + rem;
       background: $pageSubThemeColor;
+      overflow: hidden;
+
+      .shadow-container{
+        width: 100%;
+        height: 100%;
+        box-sizing: content-box;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        padding-right: 15px;
+      }
 
       &:before,
       &:after {

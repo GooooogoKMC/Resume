@@ -5,6 +5,7 @@
     <!--|-->
     <!--<router-link to="/about">About</router-link>-->
     <!--</div>-->
+    <div class="animate-bg"></div>
     <div id="content">
       <transition name="fade">
         <router-view/>
@@ -90,35 +91,57 @@ export default {
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #333;
+    min-width: 960px;
 
     position: relative;
     width: 100%;
     height: 100%;
     overflow: auto;
     background-repeat: repeat;
-    background-image: linear-gradient(90deg, rgba(0, 99, 103, 0.76), rgba(66, 142, 146, 0.76),
+    /*background-image: linear-gradient(90deg, rgba(0, 99, 103, 0.76), rgba(66, 142, 146, 0.76),
       rgba(0, 54, 58, 0.76), rgba(1, 87, 155, 0.76), rgba(49, 27, 146, 0.76),
       rgba(136, 14, 79, 0.76), rgba(201, 122, 26, 0.75), rgba(194, 53, 45, 0.75),
-      rgba(63, 81, 181, 0.75), rgba(0, 96, 100, 0.76));
+      rgba(63, 81, 181, 0.75), rgba(0, 96, 100, 0.76));*/
     /*background-image: linear-gradient(90deg, #006064, #428e92,*/
     /*#00363a, #01579b, #311b92, #880e4f,*/
     /*#c97a1a, #c2352d, #3f51b5, #006064);*/
-    background-attachment: fixed;
-    background-size: 5000% 5000%;
-    animation: backgroundColorChange 2400s normal infinite linear;
-    @keyframes backgroundColorChange {
-      from {
-        background-position: 5000% 5000%;
-      }
-      to {
-        background-position: 0 0;
+    /*background-attachment: fixed;
+    background-size: 5000% 5000%;*/
+    /*background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);*/
+    /*animation: backgroundColorChange 6s normal infinite linear;*/
+    /*@keyframes backgroundColorChange {*/
+      /*from {*/
+        /*!*background-position: 5000% 5000%;*!*/
+        /*filter: hue-rotate(0deg);*/
+      /*}*/
+      /*to {*/
+        /*!*background-position: 0 0;*!*/
+        /*filter: hue-rotate(360deg);*/
+      /*}*/
+    /*}*/
+    .animate-bg{
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      background-image: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+      animation: backgroundColorChange 12s normal infinite linear;
+      @keyframes backgroundColorChange {
+        from {
+          /*background-position: 5000% 5000%;*/
+          filter: hue-rotate(0deg);
+        }
+        to {
+          /*background-position: 0 0;*/
+          filter: hue-rotate(360deg);
+        }
       }
     }
-
     #content {
       position: relative;
-      min-width: 960px;
-
+      z-index: 2;
       .fade-enter-active,
       .fade-leave-active {
         position: absolute;
@@ -146,6 +169,7 @@ export default {
       position: fixed;
       right: 20px;
       bottom: 30px;
+      z-index: 3;
       .iconfont{
         $size: 50;
         background: #fff;

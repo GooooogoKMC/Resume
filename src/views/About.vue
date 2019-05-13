@@ -3,7 +3,7 @@
     <router-link :to="{name:'home'}" tag="div" class="pre"></router-link>
     <about-base/>
     <about-detail/>
-    <div :to="{name:'home'}" tag="div" class="forward"></div>
+    <router-link :to="{name:'appraisal'}" tag="div" class="forward"></router-link>
   </div>
 </template>
 
