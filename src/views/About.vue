@@ -86,15 +86,20 @@ export default {
       }
 
       @keyframes wave {
-        from {
+        0% {
           width: $nextPageSize + rem;
           height: $nextPageSize + rem;
           opacity: 1;
         }
-        to {
+        70%{
           width: $nextPageSize * 2 + rem;
           height: $nextPageSize * 2 + rem;
           opacity: 0;
+        }
+        100%{
+          width: $nextPageSize + rem;
+          height: $nextPageSize + rem;
+          opacity: .1;
         }
       }
     }
