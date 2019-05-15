@@ -10,7 +10,7 @@
         <p class="sub-name">{{baseInfo.nameEn}}</p>
         <p class="intention">求职意向：{{baseInfo.intention}}</p>
       </div>
-      <router-link tag="div" :to="{name:'about'}" class="next-page"/>
+      <router-link tag="div" :to="{name:'about'}" class="next-page" v-if="canShowNextPage"/>
     </div>
     <div class="contact">
       <div class="iconfont" :title="baseInfo.phone">&#xe848;{{baseInfo.phone}}</div>
@@ -27,10 +27,20 @@
 export default {
   name: 'home',
   components: {},
+  data() {
+    return {
+      canShowNextPage: false,
+    };
+  },
   computed: {
     baseInfo() {
       return this.$store.getters.getBaseInfo;
     },
+  },
+  mounted() {
+    setTimeout(() => {
+      this.canShowNextPage = true;
+    }, 30);
   },
 };
 </script>
