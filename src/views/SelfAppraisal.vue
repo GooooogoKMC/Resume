@@ -135,9 +135,13 @@ export default {
     .content{
       flex-grow: 1;
       overflow: hidden;
+      position: relative;
+      width: 100%;
       .shadow-container{
+        position: absolute;
         width: 100%;
-        height: 100%;
+        top: 0;
+        bottom: 0;
         overflow: auto;
         box-sizing: content-box;
         padding-right: .13rem;
