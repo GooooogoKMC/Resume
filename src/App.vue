@@ -85,6 +85,16 @@ export default {
 </script>
 
 <style lang="scss">
+  @media print{
+    #app{
+      width: 794px;
+      height: 1123px;
+      min-width: 794px;
+    }
+    #zoom{
+      display: none;
+    }
+  }
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;

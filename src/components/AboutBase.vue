@@ -8,34 +8,40 @@
     </div>
     <div class="lead">
       <div class="triangle"/>
-      <div class="shadow-container">
-        <div class="bloc">
-          <div class="title theme-select">专业技能</div>
-          <div class="content professional-skill">
-            <div v-for="item in professionalSkill" :key="item.code">
-              <div class="skill-icon iconfont-code" v-html="item.code"></div>
-              <div class="skill-name theme-select">{{item.name}}</div>
+      <div class="shadow">
+        <div class="shadow-container">
+          <div class="bloc">
+            <div class="title theme-select">专业技能</div>
+            <div class="content professional-skill">
+              <div v-for="item in professionalSkill" :key="item.code">
+                <div class="skill-icon iconfont-code" v-html="item.code"></div>
+                <div class="skill-name theme-select">{{item.name}}</div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="bloc">
-          <div class="title theme-select">基本信息</div>
-          <div class="content">
-            <div class="line">
-              <div class="iconfont-code icon theme-select">&#xe668;</div>
-              <div class="tale theme-select">{{baseInfo.birth}}</div>
-            </div>
-            <div class="line">
-              <div class="iconfont icon theme-select">&#xe848;</div>
-              <div class="tale theme-select">{{baseInfo.phone}}</div>
-            </div>
-            <div class="line">
-              <div class="iconfont icon theme-select">&#xe832;</div>
-              <div class="tale theme-select">{{baseInfo.mail}}</div>
-            </div>
-            <div class="line">
-              <div class="iconfont icon theme-select">&#xe7a5;</div>
-              <div class="tale theme-select">{{baseInfo.location}}</div>
+          <div class="bloc">
+            <div class="title theme-select">基本信息</div>
+            <div class="content">
+              <div class="line">
+                <div class="iconfont-code icon theme-select">&#xe668;</div>
+                <div class="tale theme-select">{{baseInfo.birth}}</div>
+              </div>
+              <div class="line">
+                <div class="iconfont icon theme-select">&#xe848;</div>
+                <div class="tale theme-select">{{baseInfo.phone}}</div>
+              </div>
+              <div class="line">
+                <div class="iconfont icon theme-select">&#xe832;</div>
+                <div class="tale theme-select">{{baseInfo.mail}}</div>
+              </div>
+              <div class="line">
+                <div class="iconfont icon theme-select">&#xe7a5;</div>
+                <div class="tale theme-select">{{baseInfo.location}}</div>
+              </div>
+              <div class="line">
+                <div class="iconfont-code icon theme-select">&#xe61a;</div>
+                <div class="tale theme-select">政治面貌：党员</div>
+              </div>
             </div>
           </div>
         </div>
@@ -186,15 +192,20 @@ export default {
       left: $baseLeadLeft + rem;
       padding-top: $baseLeadBeforeHeight * 2 + rem;
       background: $pageSubThemeColor;
-      overflow: hidden;
 
-      .shadow-container{
+      .shadow {
         width: 100%;
         height: 100%;
-        box-sizing: content-box;
-        overflow-x: hidden;
-        overflow-y: scroll;
-        padding-right: 15px;
+        overflow: hidden;
+
+        .shadow-container {
+          width: 100%;
+          height: 100%;
+          box-sizing: content-box;
+          overflow-x: hidden;
+          overflow-y: scroll;
+          padding-right: 15px;
+        }
       }
 
       &:before,
@@ -243,7 +254,7 @@ export default {
         margin-bottom: .2rem;
 
         .title {
-          font-size: .36rem;
+          font-size: .32rem;
           font-weight: bold;
           text-align: center;
         }
@@ -260,7 +271,7 @@ export default {
 
             .skill-icon {
               user-select: none;
-              font-size: .28rem;
+              font-size: .26rem;
               cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAAflBMVEUAAAAAAADd3d3KysoAAAD////V1dUAAAClpaXPz88vLy8AAAD4+PgAAAAAAABSUlLq6upeXl55eXkAAACLi4sAAAAAAAAAAAAPDw8WFhb8/Pzw8PC7u7u5ubktLS2enp43NzdxcXGVlZUAAAAAAAAAAAAAAAAAAAD///8AAABQSh+wAAAAKHRSTlMA+MjB7Pq9QL/E3Lff39DNy8rEv7KjbxXy7ejOwMDAv760soBaMSEJ3P0nywAAAJdJREFUGNNtz9cOwyAMhWET3IwmzW7SvYfP+79gLVVCCeS/gk9GALleXUJ+HwCBlnup4NmIWlb+aG5EBMPMvshEDt7kFjqYwW3ZGGZYqXaArs1Gx3Hp+0eqh+31bFOtQUI4itwKmbQuCbE+5TTD/I92ihhCLPAOMQOF2HKIeo9iLYJogngq3mOLNnI1GIk61p+xcXFCy/0Axbkc78JFDG8AAAAASUVORK5CYII="), default;
             }
 
@@ -273,7 +284,7 @@ export default {
             justify-content: flex-start;
             align-items: center;
             font-size: .18rem;
-            margin-bottom: .15rem;
+            margin-bottom: .1rem;
 
             .icon {
               font-size: .18rem;

@@ -41,6 +41,11 @@ export default {
     justify-content: flex-start;
     align-items: center;
 
+    @media print{
+      .pre{
+        display: none;
+      }
+    }
     .pre {
       $nextPageSize: .3;
       position: absolute;

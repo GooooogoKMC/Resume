@@ -31,6 +31,12 @@ export default {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, .7), 0 0 30px -5px rgba(0, 0, 0, .7);
     border-top: 1px solid transparent;
 
+    @media print{
+      .pre,
+      .forward{
+        display: none;
+      }
+    }
     .pre {
       left: 0;
       transform: translate(-50%, -50%);

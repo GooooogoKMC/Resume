@@ -132,6 +132,11 @@ export default {
         }
       }
 
+      @media print{
+        .next-page{
+          display: none;
+        }
+      }
       .next-page {
         $nextPageSize: .3;
         position: absolute;
