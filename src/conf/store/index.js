@@ -8,7 +8,7 @@ export default new Vuex.Store({
     baseInfo: {
       name: '刘志达',
       nameEn: 'GoogoKMChi',
-      intention: 'Web前端开发',
+      intention: '前端工程师',
       phone: '13702003650',
       mail: 'GoogoKMChi@gmail.com',
       location: '成都市温江区',

@@ -62,6 +62,9 @@ export default {
         name: 'Vue',
         code: '&#xe60c;',
       }, {
+        name: 'React',
+        code: '&#xe6ef;',
+      }, {
         name: 'TS',
         code: '&#xe608;',
       }, {
@@ -100,9 +103,6 @@ export default {
       }, {
         name: 'Git',
         code: '&#xe601;',
-      }, {
-        name: 'SVN',
-        code: '&#xe63e;',
       }, {
         name: 'Android',
         code: '&#xe749;',

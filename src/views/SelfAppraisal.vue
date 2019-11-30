@@ -154,7 +154,7 @@ export default {
     margin: 0;
     color: #aaa;
     text-align: left;
-    line-height: 0.5rem;
+    line-height: 0.2rem;
   }
   .content >>>p span{
       font-size: .24rem !important;

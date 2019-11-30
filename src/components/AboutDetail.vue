@@ -42,6 +42,16 @@
             参与原型设计，配合移动端开发，前端页面开发以及微信小程序的开发。
           </div>
         </div>
+        <div>
+          <div class="tip">
+            <div class="time">2019.5至今</div>
+            <div class="place">成都中软国际</div>
+            <div class="position">Web前端工程师</div>
+          </div>
+          <div class="description">
+            到华为修改TSP项目的问题，重构TSF项目
+          </div>
+        </div>
       </div>
     </div>
     <div class="bloc">
@@ -123,16 +133,6 @@
         <div>
           <div class="tip">
             <div class="time">2018</div>
-            <div class="place">生态智游</div>
-            <div class="position">百邦达科技</div>
-          </div>
-          <div class="description">
-            接手本项目，使用Vue，主要负责已有页面的完善和缺失功能的完善，并配合移动端完成嵌入以及交互等功能的开发。
-          </div>
-        </div>
-        <div>
-          <div class="tip">
-            <div class="time">2018</div>
             <div class="place">涠洲岛票务系统</div>
             <div class="position">百邦达科技</div>
           </div>
@@ -153,11 +153,11 @@
         <div>
           <div class="tip">
             <div class="time">2019</div>
-            <div class="place">AI专利智能审查</div>
-            <div class="position">-</div>
+            <div class="place">TSP项目</div>
+            <div class="position">中软国际</div>
           </div>
           <div class="description">
-            帮前公司指韵科技完成前端开发的所有内容，使用axios，Echarts，elementui，vue-cookies等
+            修改TSP项目中的内容，完成融合工作，以及使用React重构TSF项目
           </div>
         </div>
       </div>
@@ -170,8 +170,8 @@
       <div class="content">
         <div class="interest">
           <div class="faver">
-            <div class="iconfont-code faver-icon">&#xe621;</div>
-            <div class="faver-name">烧烤</div>
+            <div class="iconfont-code faver-icon">&#xe66e;</div>
+            <div class="faver-name">轮滑</div>
           </div>
           <div class="faver">
             <div class="iconfont-code faver-icon">&#xe616;</div>
@@ -214,14 +214,14 @@ export default {
       overflow: hidden;
       .content{
         width: 100%;
-        height: 5.3rem;
+        height: 5.1rem;
         padding-right: 12px;
         overflow: auto;
       }
     }
     /*background: #fff;*/
     .bloc {
-      margin-bottom: .2rem;
+      margin-bottom: .1rem;
       font-size: .18rem;
 
       .title {
